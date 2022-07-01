@@ -23,3 +23,4 @@ def solution(x, y, n):
 solution(0,0,N)
 print(res.count(0))
 print(res.count(1))
+
