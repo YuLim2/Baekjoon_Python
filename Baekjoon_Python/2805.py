@@ -1,3 +1,4 @@
+# 백준에서 pypy로 제출해야 함
 import sys
 input = sys.stdin.readline
 
