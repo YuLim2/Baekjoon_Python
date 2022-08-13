@@ -1,10 +1,15 @@
-import sys
-input = sys.stdin.readline
+n = int(input())
 
-n = int(input().split())
-ls = list(map(int, input().split()))
+k = 1
+while n > k:
+    n -= k
+    k += 1
 
-ls2 = sorted(list(set(ls)))
-dic = {ls2[i] : i for i in range(len(ls2))}
-for i in ls:
-    print(dic[i], end = ' ')
+if k % 2 == 0:
+    a = n
+    b = k - n + 1
+else:
+    a = k - n + 1
+    b = n
+
+print(a, '/', b, sep='')
