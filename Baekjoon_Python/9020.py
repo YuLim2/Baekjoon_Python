@@ -17,6 +17,7 @@ for _ in range(int(input())):
     while a > 0:
         if is_prime(a) and is_prime(b):
             print(a, b)
+            break
         else:
             a -= 1
             b += 1
