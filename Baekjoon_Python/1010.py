@@ -8,4 +8,5 @@ def f(n):
 
 for _ in range(num):
     n, m = map(int, input().split())
-    print(f(m-1)*f(n))
+    res = f(m) // (f(n) * f(m - n))
+    print(res)
